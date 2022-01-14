@@ -102,6 +102,9 @@ public class Methods {
         Files.write(Paths.get("data", "contacts.txt"), newList);
     }
 
+
+
+
     public static void searchContactName () throws IOException {
         System.out.println("Enter a name or phone number: ");
         Scanner scanner = new Scanner(System.in);
