@@ -1,9 +1,9 @@
 public class Contacts {
     private String lastName;
     private String firstName;
-    private int phoneNumber;
+    private String phoneNumber;
 
-    public Contacts(String lastName, String firstName, int phoneNumber) {
+    public Contacts(String lastName, String firstName, String phoneNumber) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.phoneNumber = phoneNumber;
@@ -25,11 +25,11 @@ public class Contacts {
         this.firstName = firstName;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
