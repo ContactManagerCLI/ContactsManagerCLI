@@ -64,7 +64,7 @@ public class Methods {
 
                     Files.write(
                             Paths.get("data", "contacts.txt"),
-                            Arrays.asList(firstName + " " + lastName + " |" + bonusNumber), // list with one item
+                            Arrays.asList(firstName + " " + lastName + " " + bonusNumber), // list with one item
                             StandardOpenOption.APPEND
                     );
                     sideList.add(new Contacts(firstName, lastName, phoneNumber));
