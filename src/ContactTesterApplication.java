@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -30,8 +31,12 @@ public class ContactTesterApplication {
                          Methods.addContact();
                          break;
                     case 3:
-                         Methods.deleteContact();
+                         Methods.searchContactName();
+                         break;
                     case 4:
+                        Methods.deleteContact();
+                        break;
+                    case 5:
                         System.out.println("Have a good day.");
                         confirm = false;
                         break;
