@@ -36,16 +36,22 @@ public class Methods {
             Path contactPath = Paths.get("data", "contacts.txt");
             List<String> contactList = Files.readAllLines(contactPath);
 
+            boolean noMore = false;
             for (String contact : contactList) {
-                if (contact.toLowerCase().contains(firstName) && contact.toLowerCase().contains(lastName)) {
+                if (contact.toLowerCase().contains(firstName.toLowerCase()) && contact.toLowerCase().contains(lastName.toLowerCase())) {
                     System.out.println("There's already a contact named " + firstName + lastName + "." + "Do you want to overwrite it? (Yes/No)");
                     String yesNo = scanner.nextLine();
                     if (yesNo.equalsIgnoreCase("yes") || yesNo.equalsIgnoreCase("y")) {
                         break;
                     } else {
+                        noMore = true;
                         addContact();
+                        break;
                     }
                 }
+            }
+            if(noMore){
+                break;
             }
 // ================================PHONE NUMBER==================================================================
             boolean tryAgain = true;

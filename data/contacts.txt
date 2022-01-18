@@ -3,4 +3,8 @@ Chuck Norris 123-456-7891
 Bob Miller 232-3232
 Jackie Chan 321-456-7891
 Steven Segal 987-3344
+Cynthia  Rothrock |111-1111
+Jet Li |222-2222
+James  Dean |123-4567
+Michael Caine |321-4567
 
