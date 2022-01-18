@@ -1,3 +1,6 @@
 Bruce Lee 123-4567
 Chuck Norris 123-456-7891
-bob miller 232-3232
+Bob Miller 232-3232
+Jackie Chan 321-456-7891
+Steven Segal 987-3344
+

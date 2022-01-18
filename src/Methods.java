@@ -1,4 +1,4 @@
-import javax.crypto.spec.PSource;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-//import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
+
 
 public class Methods {
 
@@ -103,7 +103,9 @@ public class Methods {
             Contacts newContact = new Contacts(firstName, lastName, phoneNumber);
             contacts = addContact(contacts, newContact);
         }
-
+        String name = "Name";
+        String phoneNumber = "Phone Number";
+        System.out.printf("%-15s | %-12s |\n ------------------------------\n", name, phoneNumber);
         for (int i = 0; i < contacts.length; i++) {
             System.out.println(contacts[i].toString());
         }
@@ -130,6 +132,7 @@ public class Methods {
 
         for (String line : lines) {
             if (line.toLowerCase().contains(userInput.toLowerCase())) {
+
                 continue;
             }
             newList.add(line);
